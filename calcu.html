@@ -1,0 +1,406 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+</head>
+<style>
+    body{
+        background-color: #171321;
+    }
+    #hd{
+        color: #F4EEFF;
+    }
+
+#box{
+    background-color: #6C4AB6;
+    width: 300px;
+    height: 500px;
+    position: absolute;
+    left: 450px;
+    top: 30px;
+    border: solid #6C4AB6;
+    border-radius: 25px;
+    
+   
+}
+#display{
+    position:absolute;
+    top: 10px;
+    left: 20px;
+    width: 250px;
+    height: 70px;
+    background-color:#211A2D;
+    border: solid #211A2D;
+    border-radius: 25px;
+    color: wheat;
+    font-size: 60px;
+}
+#btnc{
+    background-color: #A855F7;
+    width: 50px;
+    height: 50px;
+    position: absolute;
+    top: 110px;
+    left: 20px;
+    color: #FFFFFF;
+    border: solid #A855F7;
+    border-radius: 25px;
+    font-size: 20px;
+}
+#btnc :hover{
+     box-shadow:50px 10px 50px 10px #A855F7;
+}
+#btnp{
+    background-color: #D8B4FE;
+    width: 50px;
+    height: 50px;
+    position: absolute;
+    top: 110px;
+    left: 90px;
+    border: solid #D8B4FE;
+    border-radius: 25px;
+    font-size: 20px;
+}
+#btnp :hover{
+     box-shadow:50px 10px 50px 10px #D8B4FE;
+}
+#btnr{
+    background-color: #D8B4FE;
+    width: 50px;
+    height: 50px;
+    position: absolute;
+    top: 110px;
+    left: 160px;
+    border: solid #D8B4FE;
+    border-radius: 25px;
+    font-size: 20px;
+}
+#btnr :hover{
+     box-shadow:50px 10px 50px 10px #D8B4FE;
+}
+#divide{
+    background-color: #D8B4FE;
+    width: 50px;
+    height: 50px;
+    position: absolute;
+    top: 110px;
+    right: 20px;
+    border: solid #D8B4FE;
+    border-radius: 25px;
+    font-size: 20px;
+}
+#divide :hover{
+     box-shadow:50px 10px 50px 10px #D8B4FE;
+}
+#btn7{
+    background-color: #F4EEFF;
+    width: 50px;
+    height: 50px;
+    position: absolute;
+    top: 190px;
+    left: 20px;
+    border: solid #F4EEFF;
+    border-radius: 25px;
+    font-size: 20px;
+}
+#btn7 :hover{
+     box-shadow:50px 10px 50px 10px #F4EEFF;
+}
+#btn8{
+    background-color: #F4EEFF;
+    width: 50px;
+    height: 50px;
+    position: absolute;
+    top: 190px;
+    left: 90px;
+    border: solid #F4EEFF;
+    border-radius: 25px;
+    font-size: 20px;
+}
+#btn8 :hover{
+     box-shadow:50px 10px 50px 10px #F4EEFF;
+}
+#btn9{
+    background-color: #F4EEFF;
+    width: 50px;
+    height: 50px;
+    position: absolute;
+    top: 190px;
+    left: 160px;
+    border: solid #F4EEFF;
+    border-radius: 25px;
+    font-size: 20px;
+}
+#btn9 :hover{
+     box-shadow:50px 10px 50px 10px #F4EEFF;
+}
+#multiply{
+    background-color: #D8B4FE;
+    width: 50px;
+    height: 50px;
+    position: absolute;
+    top: 190px;
+    right: 20px;
+    border: solid #D8B4FE;
+    border-radius: 25px;
+    font-size: 20px;
+}
+#multiply :hover{
+     box-shadow:50px 10px 50px 10px #D8B4FE;
+}
+#btn4{
+    background-color: #F4EEFF;
+    width: 50px;
+    height: 50px;
+    position: absolute;
+    top: 270px;
+    left: 20px;
+    border: solid #F4EEFF;
+    border-radius: 25px;
+    font-size: 20px;
+}
+#btn4 :hover{
+     box-shadow:50px 10px 50px 10px #F4EEFF;
+}
+#btn5{
+    background-color: #F4EEFF;
+    width: 50px;
+    height: 50px;
+    position: absolute;
+    top: 270px;
+    left: 90px;
+    border: solid #F4EEFF;
+    border-radius: 25px;
+    font-size: 20px;
+}
+#btn5 :hover{
+     box-shadow:50px 10px 50px 10px #F4EEFF;
+}
+#btn6{
+    background-color: #F4EEFF;
+    width: 50px;
+    height: 50px;
+    position: absolute;
+    top: 270px;
+    left: 160px;
+    border: solid #F4EEFF;
+    border-radius: 25px;
+    font-size: 20px;
+}
+#btn6 :hover{
+     box-shadow:50px 10px 50px 10px #F4EEFF;
+}
+#subtract{
+    background-color: #D8B4FE;
+    width: 50px;
+    height: 50px;
+    position: absolute;
+    top: 270px;
+    right: 20px;
+    border: solid #D8B4FE;
+    border-radius: 25px;
+    font-size: 20px;
+}
+#subtract :hover{
+     box-shadow:50px 10px 50px 10px #D8B4FE;
+}
+#btn1{
+    background-color: #F4EEFF;
+    width: 50px;
+    height: 50px;
+    position: absolute;
+    top: 350px;
+    left: 20px;
+    border: solid #F4EEFF;
+    border-radius: 25px;
+    font-size: 20px;
+}
+#btn1 :hover{
+     box-shadow:50px 10px 50px 10px #F4EEFF;
+}
+#btn2{
+    background-color: #F4EEFF;
+    width: 50px;
+    height: 50px;
+    position: absolute;
+    top: 350px;
+    left: 90px;
+    border: solid #F4EEFF;
+    border-radius: 25px;
+    font-size: 20px;
+}
+#btn2 :hover{
+     box-shadow:50px 10px 50px 10px #F4EEFF;
+}
+#btn3{
+    background-color: #F4EEFF;
+    width: 50px;
+    height: 50px;
+    position: absolute;
+    top: 350px;
+    left: 160px;
+    border: solid #F4EEFF;
+    border-radius: 25px;
+    font-size: 20px;
+}
+#btn3 :hover{
+     box-shadow:50px 10px 50px 10px #F4EEFF;
+}
+#add{
+    background-color: #D8B4FE;
+    width: 50px;
+    height: 50px;
+    position: absolute;
+    top: 350px;
+    right: 20px;
+    border: solid #D8B4FE;
+    border-radius: 25px;
+    font-size: 20px;
+}
+#add :hover{
+     box-shadow:50px 10px 50px 10px #D8B4FE;
+}
+#btns{
+    background-color: #D8B4FE;
+    width: 50px;
+    height: 50px;
+    position: absolute;
+    top: 430px;
+    left: 20px;
+    border: solid #D8B4FE;
+    border-radius: 25px;
+    font-size: 20px;
+}
+#btns :hover{
+     box-shadow:50px 10px 50px 10px #D8B4FE;
+}
+#btn0{
+    background-color: #F4EEFF;
+    width: 50px;
+    height: 50px;
+    position: absolute;
+    top: 430px;
+    left: 90px;
+    border: solid #F4EEFF;
+    border-radius: 25px;
+    font-size: 20px;
+}
+#btn0 :hover{
+     box-shadow:50px 10px 50px 10px #F4EEFF;
+}
+#btnd{
+    background-color: #F4EEFF;
+    width: 50px;
+    height: 50px;
+    position: absolute;
+    top: 430px;
+    left: 160px;
+    border: solid #F4EEFF;
+    border-radius: 25px;
+    font-size: 20px;
+}
+#btnd :hover{
+     box-shadow:50px 10px 50px 10px #F4EEFF;
+}
+#btne{
+    background-color: #A855F7;
+    width: 50px;
+    height: 50px;
+    position: absolute;
+    top: 430px;
+    left: 230px;
+    color: #FFFFFF;
+    border: solid  #A855F7;
+    border-radius: 25px;
+    font-size: 20px;
+}
+#btne :hover{
+     box-shadow:50px 10px 50px 10px #A855F7;
+}
+
+</style>
+<body bgcolor="black">
+    <font face="Agency FB">
+    <h1 id="hd">⇛ Simple Calculator</h1>
+    <div id="box">
+    <DIV class="display" id="display">0</DIV>
+
+    <div><button id="btnc" onclick="clearDisplay()"><b>C</b></button></div>
+    <div><button id="btnp" onclick="addValue('%')" class="operator"><b>%</b></button></div>
+    <div><button id="btnr" onclick="backspace()"><b>⌫</b></button></div>
+    <div><button id="divide" onclick="addValue('/')" class="operator"><b>÷</b></button></div>
+
+    <div><button id="btn7" onclick="addValue('7')"><b>7</b></button></div>
+    <div><button id="btn8" onclick="addValue('8')"><b>8</b></button></div>
+    <div><button id="btn9" onclick="addValue('9')"><b>9</b></button></div>
+    <div><button id="multiply" onclick="addValue('*')" class="operator"><b>×</b></button></div>
+
+    <div><button id="btn4" onclick="addValue('4')"><b>4</b></button></div>
+    <div><button id="btn5" onclick="addValue('5')"><b>5</b></button></div>
+    <div><button id="btn6" onclick="addValue('6')"><b>6</b></button></div>
+    <div><button id="subtract" onclick="addValue('-')" class="operator"><b>-</b></button></div>
+
+    <div><button id="btn1" onclick="addValue('1')"><b>1</b></button></div>
+    <div><button id="btn2" onclick="addValue('2')"><b>2</b></button></div>
+    <div><button id="btn3" onclick="addValue('3')"><b>3</b></button></div>
+    <div><button id="add" onclick="addValue('+')" class="operator"><b>+</b></button></div>
+
+    <div><button id="btns" onclick="addValue('√')" class="operator"><b>√</b></button></div>
+    <div><button id="btn0" onclick="addValue('0')"><b>0</b></button></div>
+    <div><button id="btnd" onclick="addValue('.')"><b>.</b></button></div>
+    <div><button id="btne" onclick="calculate()" class="equal"><b>=</b></button></div>
+    </div>
+
+    <script>
+       
+        function addValue(value){
+            if (value === '√') {
+               
+                let currentValue = parseFloat(display.innerText);
+         
+                if (currentValue < 0) {
+                    display.innerText = "Error";
+                } else {
+                 
+                    display.innerText = Math.sqrt(currentValue);
+                }
+            
+            } else {
+         
+                if (display.innerText === "0" || display.innerText === "Error") {
+                    display.innerText = value;
+                } else {
+                    display.innerText += value;
+                }
+            }
+        }
+        function clearDisplay(){
+            display.innerText = "0";
+        }
+
+        function backspace(){
+            let value = display.innerText;
+            value = value.slice(0,-1);
+            if(value ==""){
+                value = "0"
+            }
+            display.innerText = value;
+        }
+
+        function calculate(){
+            try{
+                let expression = display.innerText;
+                let result = eval(expression);
+                display.innerText = result;
+            }catch{
+                display.innerText = "Error";
+            }
+            
+        }
+        
+    </script>
+    </font>
+</body>
+</html>

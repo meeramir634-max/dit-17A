@@ -1,0 +1,302 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">   
+</head>
+
+<style>
+    body {
+        background-image: url(cerapic/cerave2.png);
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+        padding: 0;
+        margin: 700px;
+        margin-left: 100px;
+        margin-right: 100px;
+    }
+
+    #container {
+        background-color: black;
+        padding: 0 40px;
+        display: flex;
+        text-align: center;
+        position: absolute;
+        top: 0px;
+        left: 0px;
+        justify-content: space-between;
+        height: 100px;
+        width: 1200px;
+        opacity: 0.6;
+        animation-name: simple1;
+        animation-duration: 6s;
+        animation-delay: 0s;
+        animation-fill-mode: forwards;
+    }
+
+    @keyframes simple1 {
+        0% {
+            background-color: cornflowerblue;
+            width: 25%;
+        }
+
+        50% {
+            background: cadetblue;
+            width: 75%;
+        }
+
+        100% {
+            background: black;
+            width: 1200px;
+        }
+    }
+
+    #box {
+        background-color:white;
+        width: 600px;
+        height: 400px;
+        position: absolute;
+        top: 110px;
+        left: 50px;
+        border-style: solid;
+        border-radius: 30%;
+        box-shadow: 0 0 15px rgba(0, 0, 0, 0, 1);
+        animation-name: simple;
+        animation-duration: 2s;
+        animation-direction: alternate;
+        animation-iteration-count: infinite;
+    }
+
+    @keyframes simple {
+        from {
+            border-radius: 30%;
+            opacity: 0.5;
+        }
+
+        to {
+            border-radius: 50%;
+            opacity: 0.5;
+        }
+    }
+
+    .nav ul {
+        list-style: none;
+        text-align: center;
+        display: flex;
+        font-size: 20px;
+        gap: 40px;
+    }
+
+    .nav a {
+        text-decoration: none;
+        color: white;
+        opacity: 0.8s;
+        height: 100px;
+        width: 150px;
+        transition: 0.8s ease;
+    }
+
+    nav a:hover {
+
+        color: grey;
+
+        transition: 1s;
+    }
+
+    .line {
+        position: absolute;
+        top: 80px;
+        left: 80px;
+    }
+
+    .btn1{
+        position: absolute;
+        top: 430px;
+        left: 120px;
+        background-color:black;
+        color: white;
+        font-size: 15px;
+        border-radius: 10px;
+    }
+
+    .btn2{
+        position: absolute;
+        top: 330px;
+        left: 230px;
+        background-color:black;
+        color: white;
+        border-radius: 10px;
+        font-size: 15px;
+    }
+
+    .btn3{
+        position: absolute;
+        top: 430px;
+        left: 300px;
+        background-color:black;
+        color: white;
+        border-radius: 10px;
+        font-size: 15px;
+    }
+
+    .icon1{
+        position: absolute;
+        top: 500px;
+        left: 10px;
+        width: 140px;
+        height: 60px;
+        background-color: white;
+        border-radius: 10px;
+        opacity: 0.9;
+    }
+    .icon1 i {
+        position: absolute;
+        top: 10px;
+        left: 15px;
+        font-size: 25px;
+       
+    }
+    .icon1 p{
+        position: absolute;
+        top: 0;
+        left: 55px;
+        font-size: 15px;
+       
+    }
+
+    .icon2{
+        position: absolute;
+        top: 500px;
+        left: 180px;
+        width: 150px;
+        height: 60px;
+        background-color: white;
+        border-radius: 10px;
+        opacity: 0.9;
+    }
+    .icon2 i {
+        position: absolute;
+        top: 15px;
+        left: 15px;
+        font-size: 25px;
+       
+    }
+    .icon2 p{
+        position: absolute;
+        top: 0;
+        left: 60px;
+        font-size: 15px;
+       
+    }
+
+    .icon3{
+        position: absolute;
+        top: 500px;
+        left: 350px;
+        width: 170px;
+        height: 60px;
+        background-color: white;
+        border-radius: 10px;
+        opacity: 0.9;
+    }
+    .icon3 i {
+        position: absolute;
+        top: 15px;
+        left: 20px;
+        font-size: 25px;
+       
+    }
+    .icon3 p{
+        position: absolute;
+        top: 0;
+        left: 60px;
+        font-size: 15px;
+       
+    }
+</style>
+
+<body>
+    <div id="container">
+
+        <header>
+            <h1>
+                <font face="Berlin Sans FB" color="grey">CeraVe Skincare</font>
+            </h1>
+        </header>
+
+        <div class="nav">
+            <nav>
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">About</a></li>
+                    <li><a href="#">Service</a></li>
+                    <li><a href="#">setting</a></li>
+                </ul>
+                </nav>
+        </div>
+
+    </div>
+
+    <div id="box">
+        <div class="line">
+            <font face="Arial Black" color="black">CeraVe Skincare</font>
+            <font color="black" size="4">
+                <h1>Care for Your Skin<br>
+                    with Confidence</h1>
+            </font>
+            <font color="black">
+                <p><b>Reveal Your Healthiest Skin
+                        From gentle cleansers to deeply hydrating moisturizers, explore skincare essentials that support
+                        your skin's natural protective barrier and keep it looking its best. </b></p>
+            </font>
+        </div>
+
+        <div>
+
+            <button class="btn1">
+                <font face="Arial Black"><b>Shop Now ></b></font>
+            </button>
+            <p id="result"></p>
+
+        </div>
+
+        <div>
+
+            <button class="btn2">
+                <font face="Arial Black"><b>Learn More</b></font>
+            </button>
+            <p id="result"></p>
+
+        </div>
+
+        <div>
+
+            <button class="btn3">
+                <font face="Arial Black"><b>Explore Products</b></font>
+            </button>
+            <p id="result"></p>
+
+        </div>
+
+        <div class="icon1">
+            <i class="bi bi-leaf"></i>
+            <p>Clean <br>Ingredients</p>
+        </div>
+
+        <div class="icon2">
+            <i class="bi bi-flask"></i>
+            <p>Chemically <br>Tested</p>
+        </div>
+
+        <div class="icon3">
+            <i class="bi bi-droplet"></i>
+            <p>Suitable For<br>Sensitive Skin</p>
+        </div>
+
+</body>
+
+</html>
